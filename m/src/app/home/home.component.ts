@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FlightsService } from "../flights.service";
+import { Flight } from "../flight.model"
 
 
 @Component({
@@ -9,13 +10,12 @@ import { FlightsService } from "../flights.service";
 })
 export class HomeComponent implements OnInit {
 
-  constructor( private flightsevice: FlightsService) { }
+  flights: Flight[]
+
+  constructor( private flightService: FlightsService) { }
 
   ngOnInit(): void {
-  }
-
-  getGlights() {
-    
+    this.flights = this.flightService.getFlights();
   }
 
 }

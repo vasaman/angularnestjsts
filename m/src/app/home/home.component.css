@@ -1,0 +1,20 @@
+.flight_res {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .flight_panel {
+    margin-top: 20px;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+
+}

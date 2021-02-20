@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("assets/aa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}  
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo_box {
+        background-image: url("assets/logo.jpg");
+        height: 80px;
+        width: 250px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10px 40px;
+        align-self: flex-start;
+}
+header .link_box {
+        height: 80px;
+        margin: 18px 10px;
+        width: 500px;
+        align-self: flex-end;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+
+header .link_box button {
+    border-radius: 9px;
+    margin-right: 10px ;
+    width: 100px;
+    height: 30px;
+    background-color: darkolivegreen;
+    color: azure;
+    text-align: center;
+}
+
